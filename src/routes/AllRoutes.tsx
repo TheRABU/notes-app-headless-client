@@ -1,8 +1,9 @@
 import { createBrowserRouter, RouterProvider } from "react-router";
 import RootLayout from "../layouts/RootLayout";
-import App from "../App";
+
 import Login from "../pages/loginpage/Login";
 import NotesPage from "../pages/notespage/NotesPage";
+import Home from "../pages/homepage/Home";
 
 const AllRoutes = () => {
   const router = createBrowserRouter([
@@ -12,7 +13,7 @@ const AllRoutes = () => {
       children: [
         {
           path: "/",
-          element: <App />,
+          element: <Home />,
         },
         {
           path: "/login",
